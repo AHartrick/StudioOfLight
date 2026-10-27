@@ -1,0 +1,150 @@
+	
+* {
+	box-sizing:border-box;}
+section {
+	padding-left: .5em;
+	padding-right: .5em;}	
+body {
+	background-color: #40407A;
+	color: #40407A;
+	font-family: Arial;
+	margin: 0;}
+h2 {
+	margin: 0;}
+li {
+	font-size: 90%;}
+dd {
+	font-size: 90%;}
+header {
+	background-color: #40407A;
+	background-image: url(sunset.jpeg);
+	color:#FFFFFF;
+	background-size: 100% 100%;
+	margin-top: 50px;
+	font-size: 90%;
+	min-height: 200px;}
+header a:link {color: #FFFFFF;}
+header a:visited {color: #FFFFFF;}
+header a:hover {color: #EDF5F5;}
+nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	width: 100%;
+	height: auto;
+	background-color: #FFFFFF;
+	font-weight: bold;
+	text-align: right;
+	margin: 0;
+	padding: 0.5em 0em 1em 0;}
+nav a {
+	text-decoration: none;}
+nav ul {
+	padding-right: 2em;
+	font-size: 1.2em;}
+nav li {
+	display: inline;
+	padding-left: 4em;}
+nav a:link {color: #3F2860;}
+nav a:visited {color: #497777;}
+nav a:hover {color: #A26100;}
+footer {
+	font-size: small;
+	font-style: italic;
+	text-align: center;
+	clear: right;}
+#mathero{
+	height: 300px;
+	background-image: url(yogamat.jpeg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	display: none;
+	}
+#loungehero{
+	height: 300px;
+	background-image: url(yogalounge.jpeg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	display: none;
+	}
+.home{
+	height: 20vh;
+	padding: 2em 0 0 10%;}
+.class {
+	height: 250px;
+	padding: 2em 0 2em 8em;}
+#wrapper {
+	background-color: #F5F5F5;
+	padding: 2em;}
+.content {
+	height: 20vh;
+	padding: 2em 0 0 10%;}
+.flow {
+	display: block;}
+.flow > * {
+	border: 1px solid #40407A;
+	border-spacing: 1em;
+	border-collapse: collapse;
+	table-layout: fixed;
+	width: 100%;}
+td{
+	padding: 0.5em;
+	border: 1px solid #40407A;}
+th{
+	padding: 0.5em;
+	border: 1px solid #40407A;}
+caption {
+	margin: 1em;
+	font-weight: bold;
+	font-size: 120%;}
+tr:nth-of-type(even) {
+	background-color: #D7E8E9;}
+
+@media screen and (min-width: 600px)
+{
+	header {grid-area: header;}
+	nav {grid-area: nav;}
+	main {grid-area: main;}
+	footer {grid-area: footer;}
+	nav ul {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: flex-end;}	
+	section {
+		padding-left: 2em;
+		padding-right: 2em;}
+	.flow {
+		display: flex;
+		grid-auto-columns: auto;
+		width: auto;}
+	.flow > * {
+		border: 2px solid #40407A;
+		border-radius: 5px;}
+	#mathero {
+		display: block;
+		margin-bottom: 1em;}
+	#loungehero {
+		display: block;
+		margin-bottom: 1em;}
+	.class {
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: flex-start;}
+}
+@media screen and (min-width: 1024px)
+{
+	header {font-size: 120%;}
+	.home {
+		height: 50vh;
+		padding-top: 5em;
+		padding-left: 8em;}
+	.content {
+		height: 30vh;
+		padding-top: 2em;
+		padding-left: 8em;}
+	#wrapper {
+		margin: auto;
+		width: 80%;}
+}
