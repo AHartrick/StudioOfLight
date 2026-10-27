@@ -1,0 +1,158 @@
+* {
+	box-sizing: border-box;}
+body {
+	background-color: #40407A;
+	color: #40407A;
+	font-family: verdana, Arial, sans-serif;
+	margin: 0;}
+header {
+	background-color: #40407A;
+	background-image: url(sunset.jpeg);
+	background-size: 100% 100%;
+	color: #FFFFFF;
+	font-size: 90%;
+	max-width: 1600px;
+	min-width: 200px;
+	margin: 0;
+	margin-top: 50px;}
+header a{
+	text-decoration: none;}
+header a:link {
+	color: #FFFFFF;}
+header a:visited {
+	color: #FFFFFF;}
+header a:hover {
+	color: #8F92B2;
+	transition:color ease-out 10s;}
+nav {
+	text-align: right;
+	font-weight: bold;
+	background-color: #FFFFFF;
+	margin: 0;
+	padding-top: 0.5em;
+	padding-bottom: 1em;
+	padding-right: 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	width: 100%;
+	height: auto;}
+nav a {
+	text-decoration: none;}
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding-right: 2em;
+	font-size: 1.2em;}
+nav li {
+	display: inline;
+	padding-left: 4em;}
+h2 {
+	margin: 0;}
+li dd {
+	font-size: 90%;}
+footer {
+	font-size: small;
+	font-style: italic;
+	text-align: center;
+	clear: right;}
+section {
+	padding-right: 0.5em;
+	padding-left: 0.5em;}
+table {
+	border: 1px solid #40407A;
+	margin-bottom: 1em;
+	border-collapse: collapse;}
+caption {
+	margin: 1em;
+	font-weight: bold;
+	font-size: 120%;}
+td, th {
+	padding: 0.5em;
+	border: 1px solid #40407A;}
+tr:nth-of-type(even) {
+	background-color: #D7E8E9;}	
+#wrapper {
+	background-color: #F5F5F5;
+	padding: 2em;}
+#mathero {
+	height: 300px;
+	background-image: url(yogamat.jpeg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	display: none;}
+#loungehero {
+	height: 300px;
+	background-image: url(yogalounge.jpeg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	display: none;}
+#flow {
+	display: block;}
+.home {
+	height: 20vh;
+	padding-top: 2em;
+	padding-left: 10%;}
+.content {
+	height: 20vh;
+	padding-top: 2em;
+	padding-left: 10%;}
+a:link {
+	color: #3F2860;}
+a:visited {
+	color: #497777;}
+a:hover {
+	color: #A26100;}
+form {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;}
+input, datalist, textarea {
+	margin-bottom: .5em;}
+
+@media only screen and (min-width: 600px) {
+	nav ul {
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: flex-end;}
+	section {
+		padding-left: 2em;
+		padding-right: 2em;
+		flex: 1;}
+	#loungehero, #mathero {
+		display: block;
+		margin-bottom: 1em;}
+	#flow {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;}
+	form {
+		width: 60%;
+		max-width: 40em;
+		display: grid;
+		grid-gap: 1em;
+		column-count: 2;
+		grid-template-columns: 9em 1fr;}
+	submit {
+		grid-column: 2;
+		width: 9em;
+		margin-bottom: 0.5em}
+}
+
+@media only screen and (min-width: 1024px) {
+	header {
+		font-size: 120%;}
+	.home {
+		height: 50vh;
+		padding-top: 5em;
+		padding-left: 8em;}
+	.content {
+		height: 30vh;
+		padding-top: 2em;
+		padding-left: 8em;}
+	#wrapper {
+		margin: auto;
+		width: 80%;}
+}
+
