@@ -1,0 +1,26 @@
+body{
+	background-color: #F5F5F5;
+	color: #40407A;
+	font-family: Arial;}
+h1 {
+	line-height: 400%;
+	test-indent: 1em;}
+li {
+	font-size: 90%;}
+dd {
+	font-size: 90%;}
+header {
+	background-color: #80CBC4;
+	background-image: url(lilyheader.jpeg);
+	background-repeat: no-repeat;
+	background-position: bottom right;}
+nav {
+	font-weight: bold;
+	text-align: center;}
+nav a {
+	text-decoration: none;}
+footer {
+	background-color: #80CBC4;
+	font-size: small;
+	font-style: italic;
+	text-align: center;}
