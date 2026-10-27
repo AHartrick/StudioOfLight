@@ -1,0 +1,126 @@
+* {
+	box-sizing:border-box;
+	padding-left: .5em;
+	padding-right: .5em;}
+body{
+	background-color: #40407A;
+	color: #40407A;
+	font-family: Arial;
+	margin: 0;}
+h2 {
+	margin: 0;}
+li {
+	font-size: 90%;}
+dd {
+	font-size: 90%;}
+header {
+	background-color: #40407A;
+	background-image: url(sunset.jpeg);
+	color:#FFFFFF;
+	background-size: 100% 100%;
+	margin-top: 50px;
+	font-size: 90%;
+	min-height: 200px;}
+header a:link {color: #FFFFFF;}
+header a:visited {color: #FFFFFF;}
+header a:hover {color: #EDF5F5;}
+nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	width: 100%;
+	height: auto;
+	background-color: #FFFFFF;
+	font-weight: bold;
+	text-align: right;
+	margin: 0;
+	padding: 0.5em 0em 1em 0;}
+nav a {
+	text-decoration: none;}
+nav ul {
+	margin:0 0 0 0;
+	padding-right: 2em;
+	font-size: 1.2em;}
+nav li {
+	display: inline;
+	padding-left: 4em;}
+nav a:link {color: #3F2860;}
+nav a:visited {color: #497777;}
+nav a:hover {color: #A26100;}
+footer {
+	font-size: small;
+	font-style: italic;
+	text-align: center;
+	clear: right;}
+#mathero{
+	height: 300px;
+	background-image: url(yogamat.jpeg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	display: none;
+	}
+#loungehero{
+	height: 300px;
+	background-image: url(yogalounge.jpeg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	display: none;
+	}
+.home{
+	height: 20vh;
+	padding: 2em 0 0 10%;}
+.class {
+	height: 250px;
+	padding: 2em 0 2em 8em;}
+#wrapper {
+	background-color: #F5F5F5;
+	padding: 2em;}
+.content {
+	height: 20vh;
+	padding-top: 2em;
+	padding-left: 10%;}
+#flow {
+	display: block;}
+@media screen and (min-width: 600px){
+	header {grid-area: header;}
+	nav {grid-area: nav;}
+	main {grid-area: main;}
+	footer {grid-area: footer;}
+	nav ul {
+		flex-flow: row nowrap;
+		justify-content: flex-end;}
+	body {
+		display: grid;
+		grid-template-areas:
+			"header header"
+			"nav nav"
+			"main main"
+			"footer footer";}
+	* {
+		padding-left: 2em;
+		padding-right: 2em;
+		flex: 1;}
+	#mathero {
+		display: block;
+		margin-bottom: 1em;}
+	#loungehero {
+		display: block;
+		margin-bottom: 1em;}
+	#flow {
+		flex-flow: row wrap;}
+	}
+@media screen and (min-width: 1024px;){
+	header {font-size: 120%;}
+	.home {
+		height:50vh;
+		padding-top: 5em;
+		padding-left: 8em;}
+	.content {
+		height: 30vh;
+		padding-top: 2em;
+		padding-left: 8em;}
+	#wrapper {
+		margin: auto;
+		width: 80%;}
+	}
